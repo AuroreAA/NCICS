@@ -27,7 +27,7 @@ source("R/ICS_utilities.R")
 ## Initialization -----
 alpha_all =  c(-1, -0.5, 0.5, 1)
 set.seed(20212022)
-update_geom_defaults("text", list(size = 6))
+
 
 
 # Applications of ICS for clustering -----
@@ -58,6 +58,7 @@ png("figures/simulations_ggpairs.png", width=900, height=900)
 GGally::ggpairs(data.frame(X_ini, group = c(rep("Group 0",Ntot*(1-eps)),rep("Group 1", Ntot*eps))), aes(colour = group,
                         alpha = 0.4),
                 columns = 1:p,
+                upper = list(continuous = wrap("cor", size = 5)),
                 title = "Mixture of two Gaussian distributions") +
   scale_y_continuous(labels = function(x) format(x, scientific = TRUE,
                                                  digits = 1)) +
@@ -82,6 +83,7 @@ png(paste0("figures/simulations_ggpairs_k", k,".png"),width=900, height=900)
 GGally::ggpairs(data.frame(X,
                                 group = c(rep("Group 0",Ntot*(1-eps)),rep("Group 1", Ntot*eps))),
                      aes(colour = group, alpha = 0.4),
+                upper = list(continuous = wrap("cor", size = 5)),
                 columns = 1:p,
                 title = bquote("Mixture of two Gaussian distributions"~kappa~"~"~ 10^ .(k)))+
   scale_y_continuous(labels = function(x) format(x, scientific = TRUE,
