@@ -30,3 +30,7 @@ paper.
 main two are: `ICS_QR_full_rank()` which implements the ICSQR algorithm described in
 the paper and `ICS_QR_not_full_rank()` in case the data are not full rank and we want
 to perform first a dimension reduction based on a pivoted QR decomposition.
+
+### renv.lock
+
+A file *renv.lock* is provided for reproducible purposes. 
