@@ -2,7 +2,7 @@
 
 This repository contains the code to reproduce the artificial examples of the 
 following paper: Numerical considerations and a new implementation for ICS, 
-Archimbaud A., Drmacz Z., Nordhausen K., Radojicic U. and A. Ruiz-Gazen, 2022 (submitted).
+Archimbaud A., Drmac Z., Nordhausen K., Radojicic U. and A. Ruiz-Gazen, 2022 (submitted).
 
 
 ## Organization of the repository
@@ -24,7 +24,7 @@ It contains three R scripts:
 - `all_applications.R`: the script to reproduce all the results and figures from the 
 paper.
 
-- `data.R`: the description of both new data sets, HTP2 and HTP3.
+- `data.R`: the description of the new data sets, HTP2 and HTP3.
 
 - `ICS_utilities.R`: all self-written R functions to perform the analysis. The
 main two are: `ICS_QR_full_rank()` which implements the ICSQR algorithm described in
