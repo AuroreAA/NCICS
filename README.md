@@ -1,6 +1,6 @@
 # NCICS: Numerical considerations for ICS
 
-This repository contains the code to reproduce the artificial examples of the 
+This repository contains the code to reproduce the examples of the 
 following paper: Numerical considerations and a new implementation for ICS, 
 Archimbaud A., Drmac Z., Nordhausen K., Radojicic U. and A. Ruiz-Gazen, 2022 (submitted).
 
@@ -9,7 +9,8 @@ Archimbaud A., Drmac Z., Nordhausen K., Radojicic U. and A. Ruiz-Gazen, 2022 (su
 
 ### Data folder
 
-Two new anonymized data sets, HTP2 and HTP3 are available in the *data* folder in `.rda` format. They are described in the paper and in the *R/data.R* file.
+Two new anonymized data sets, HTP2 and HTP3 are available in the *data* folder in `.rda` format. 
+They are described in the paper and in the *R/data.R* file.
 
 
 ### Figures folder
@@ -27,7 +28,7 @@ paper.
 - `data.R`: the description of the new data sets, HTP2 and HTP3.
 
 - `ICS_utilities.R`: all self-written R functions to perform the analysis. The
-main two are: `ICS_QR_full_rank()` which implements the ICSQR algorithm described in
+ two main functions are: `ICS_QR_full_rank()` which implements the ICSQR algorithm described in
 the paper and `ICS_QR_not_full_rank()` in case the data are not full rank and we want
 to perform first a dimension reduction based on a pivoted QR decomposition.
 
