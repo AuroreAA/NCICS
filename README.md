@@ -2,7 +2,8 @@
 
 This repository contains the code to reproduce the examples of the 
 following paper: Numerical considerations and a new implementation for ICS, 
-Archimbaud A., Drmac Z., Nordhausen K., Radojicic U. and A. Ruiz-Gazen, 2022 (submitted).
+Archimbaud, A., Drmac, Z., Nordhausen, K., Radojicic, U. & Ruiz-Gazen, A. (2023). SIAM Journal on Mathematics of Data Science (SIMODS), Vol.5(1):97–121.
+https://epubs.siam.org/doi/10.1137/22M1498759
 
 
 ## Organization of the repository
